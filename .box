@@ -1,0 +1,21 @@
+#
+# this file is used if you run SimianGrid on the PHP hosting provider
+# PagodaBox [ http://pagodabox.com ]
+#
+
+php_version: '5.3.6'
+
+php_extensions:
+    - curl
+    - gd
+    - mysql
+    - xmlrpc
+
+document_root: /
+
+shared_writable_dirs: [
+    /Grid/config,
+    /Grid/logs, 
+    /GridFrontend/application/config,
+    /GridFrontend/system/logs
+]
